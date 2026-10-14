@@ -1,18 +1,27 @@
-import './App.css'
-import ProfileCard from './ProfileCard'
 
-function App() {
+import ProfileCard from "./components/ProfileCard.jsx";
+import "./App.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <h1>My React Component Task</h1>
-      <ProfileCard 
-        name="Jane Doe" 
-        title="Frontend Developer" 
-        bio="I am learning React to build modern, dynamic web applications. This is my assignment submission!"
-        imageUrl="https://i.pravatar.cc/150?img=32" 
+    <main className="app-container">
+      <ProfileCard
+        name="Manjunath Ramappa Olekar"
+        role="Full-Stack Developer"
+        bio="Computer Engineering and IT Infrastructure student who enjoys building modern web applications."
+        skills={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Python",
+          "SQL",
+          "Git & GitHub",
+        ]}
+        github="https://github.com/manjurolekar"
+        linkedin="https://linkedin.com/in/manju-r-olekar-81561338a/"
       />
-    </div>
-  )
+    </main>
+  );
 }
-
-export default App
